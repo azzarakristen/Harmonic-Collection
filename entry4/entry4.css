@@ -1,61 +1,65 @@
+html{
+  background-color: #0099ff;
+}
+
 .title {
-    /* -webkit-text-stroke: 5.3px; */
-    /* -webkit-text-stroke-color: magenta; */
+    -webkit-text-fill-color: #fff9f2; 
     border-radius: 3px;
-    border-color: #000000;
-    color: black;
-    font-family: Filson Soft;
-    font-size: 86px;
+    border-color: #ffffff;
+    /* -webkit-text-fill-color: rgba(0, 0, 0, 0.0); */
+    font-family: "filson-soft", sans-serif;
+    font-weight: 500;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-size: 86px;
+    line-height: 70px;
     text-align: center;
-    letter-spacing: 7px;
-    margin-left: 0%;
-    margin-top: 1.5%;
-    margin-right: 2%;
-    width: 100%;
+    letter-spacing: 3px;
+    width: 103%;
     height: 70px;
-    border: 3px solid black;
+    border: 1.5px solid white;
     padding: 10px;
-    margin: 10px;
+    margin-left: -15px;
+    margin-top: 25px;
 }
 
 .title2 {
     color: #000000;
-    font-family: Filson Soft;
-    font-size: 80px;
+    font-family: "filson-soft", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 65px;
     text-align: left;
     margin-right: 1.5%;
+    position: absolute;
+    top: 17%;
 }
 
-.image1 {
-   height: 535px;
-    margin-left: 70%;
-}
 
  .wrapme {
-    width: 95%;
+    
     float: right;
     position: fixed;
     bottom: 1.5%;
-    right: 6%
+    right: 11%;
  }
  
+ .image1{
+  width: auto;
+  height: 640px;
+ }
 .image2 {
     height: 400px;
 }
 
 .genres, .artists, .tracks {
     -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: #000000;
-    -webkit-text-fill-color: #ffffff;
+    -webkit-text-stroke-color: #000000; 
     color: rgba(28, 62, 239, 0.00);
     text-align: right;
-    font-family: Pauline;
-    font-size: 140px;
-    font-style: normal;
+    font-family: "pauline", sans-serif;
     font-weight: 700;
+    font-style: italic;
+    font-size: 140px;
     line-height: normal;
 }
 
@@ -71,17 +75,23 @@
 
 
 .genres {
+   
+    -webkit-text-fill-color: magenta; 
     position: fixed;
     bottom: 25%;
     left: 5%;
 }
 
 .artists {
+   
+    -webkit-text-fill-color: yellow;
     position: fixed;
     bottom: 25%;
     left: 30%;
 }
 .tracks {
+  
+    -webkit-text-fill-color: aqua;
    position: fixed;
    bottom: 25%;
    left: 54%;
@@ -181,18 +191,18 @@
 
   .circle1 {
     position: fixed;
-    top: 35%;
+    top: 33%;
     left: 2%;
   
   }
   .circle2 {
     position: fixed;
-    top: 35%;
+    top: 37%;
     left: 27%;
   }
   .circle3 {
     position: fixed;
     top: 35%;
-    left: 50%;
+    left: 51%;
   }
- 
+
