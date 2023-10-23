@@ -71,16 +71,14 @@ html{
   
   
    .wrapme {
-      
-      float: right;
       position: fixed;
       bottom: 1.5%;
-      right: 11%;
+      right: 7%;
    }
    
    .image1{
     width: auto;
-    height: 640px;
+    height: 500px;
    }
   .image2 {
       height: 400px;
@@ -189,21 +187,24 @@ html{
         position: absolute;
         font-size: 24px;
       }
-    
+      .pngguitar, .pngfolder, .pngheadphones, .pngipod {
+        position: absolute;
+      }
       .pngguitar{
-        left: 80%;
+        left: 101%;
+        top: 40%;
       }
       .pngfolder{
-        top: 17%;
+        top: 67%;
         left: 70%;
       }
       .pngheadphones {
-        top: 15.5%;
-        left: 55%;
+        top: 35%;
+        left: 20%;
       }
       .pngipod{
-        top: 13.5%;
-        left: 58.5%;
+        top: -10%;
+        left: 35%;
       }
       .image1{
         position: abolute;
