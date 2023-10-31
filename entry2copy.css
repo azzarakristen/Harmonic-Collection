@@ -1,0 +1,226 @@
+html{
+    background-color: 
+    #82c47e
+    ;
+  }
+  .pngheadphones {
+    position: fixed;
+    top: 80px;
+    left: 34%;
+    /* height: 200px; */
+    height: 15vw;
+   }
+  
+  
+   .pngipod {
+    position: fixed;
+    top: 5%;
+    left: 37.5%;
+    /* height: 250px; */
+    height: 20vw;
+   }
+  
+   .pngfolder {
+    position: fixed;
+    top: 15%;
+    left: 49%;
+    /* height: 125px; */
+    height: 10vw;
+   }
+  
+   .pngguitar {
+    position: fixed;
+    top: 16%;
+    left: 57%;
+    /* height: 100px; */
+    height: 10vw;
+   }
+  
+   
+  
+  .title {
+    
+      -webkit-text-fill-color: #fff9f2; 
+      border-radius: 3px;
+      border-color: #ffffff;
+      /* -webkit-text-fill-color: rgba(0, 0, 0, 0.0); */
+      font-family: "filson-soft", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 6vw;
+      line-height: 70px;
+      text-align: center;
+      letter-spacing: 3px;
+      width: 103%;
+      height: 5vw;
+      border: 1.5px solid white;
+      padding: 10px;
+      margin-left: -15px;
+      margin-top: 25px;
+  }
+  
+  .title2 {
+      color: #000000;
+      font-family: "filson-soft", sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 4.2vw;
+      text-align: left;
+      margin-right: 1.5%;
+      position: absolute;
+      top: 17%;
+  }
+  
+  
+   .avatar {
+      position: fixed;
+      bottom: 1.5%;
+      right: -0.25%;
+   }
+   
+   .image1{
+    width: auto;
+    height: 500px;
+   }
+  .image2 {
+      height: 400px;
+  }
+  
+
+  
+    .genres .genretext {
+        display: none;
+        width: 200px;
+        height: auto;
+    }
+    .genres:hover .genretext {
+      display: block;
+    }
+    
+    .artists .artisttext {
+      display: none;
+      
+    }
+    .artists:hover .artisttext {
+      display: block;
+    }
+    .tracks .tracktext {
+      display: none;
+      
+    }
+    .tracks:hover .tracktext { 
+      display: block;
+    }
+   
+   
+   
+    .previous {
+      position: fixed;
+      bottom: 3%;
+      left: 3%;
+      font-family: Filson Soft;
+      font-size: 18px;
+    }
+   .next{
+    position: fixed;
+      bottom: 3%;
+      left: 9%;
+      font-family: Filson Soft;
+      font-size: 18px;
+   }
+    .vinyl1 {
+     position: fixed;
+     top: 30%;
+     left: 2%;
+     height: 400px;
+    }
+ 
+    .genredetails {
+        position: fixed;
+        top: 32%;
+        left: 3%;
+        height: 375px;
+       }
+
+
+    .vinyl2 {
+      position: fixed;
+      top: 30%;
+      left: 27%;
+      height: 400px;
+    }
+
+    .artistdetails {
+      position: fixed;
+      top: 30%;
+      left: 27%;
+      height: 400px;
+    }
+    .vinyl3 {
+      position: fixed;
+      top: 30%;
+      left: 52%;
+      height: 400px;
+    }
+
+    .trackdetails{
+      position: fixed;
+      top: 30%;
+      left: 52%;
+      height: 400px;
+    }
+   
+    @media screen and (max-width: 800px){
+      .vinyl1, .vinyl2, .vinyl3, .artistdetails, .trackdetails{
+        position: absolute;
+        align-items: center;
+        height: 300px;
+      }
+      .genredetails{
+        position: absolute;
+        align-items: center;
+        height: 280px;
+      }
+      .vinyl2, .artistdetails{
+        top: 500px;
+        left: 2%;
+
+      }
+      .vinyl3, .trackdetails{
+        top: 770px;
+        left: 2%;
+      }
+      .title2{
+        text-align: center;
+        position: absolute;
+        font-size: 24px;
+      }
+      .pngguitar, .pngfolder, .pngheadphones, .pngipod {
+        position: absolute;
+      }
+      .pngguitar{
+        left: 101%;
+        top: 40%;
+      }
+      .pngfolder{
+        top: 67%;
+        left: 70%;
+      }
+      .pngheadphones {
+        top: 35%;
+        left: 20%;
+      }
+      .pngipod{
+        top: -11%;
+        left: 35%;
+      }
+      .image1{
+        position: abolute;
+        left: 100%;
+        height: 400px;
+       
+      }
+      .title {
+        height: 50px;
+      }
+    }
