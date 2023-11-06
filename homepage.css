@@ -1,0 +1,112 @@
+html{
+    background-color: #c9c9c9
+    /* #b5b5b5 */
+    /* #ffad63 */
+    /* #628760 */
+    
+    /* #fffab8; */
+}
+.containerbig {
+    display: grid;
+    position: fixed;
+    left: 40%;
+    top: 18%;
+    grid-template-columns: 55% 55% 55%;
+    grid-template-rows: 35% 35% 35%;
+}
+
+.containersmall{
+    display: none
+}
+
+.week1, .week2, .week3, .week4, .week5, .week6, .week7, .week8, .week9 {
+    width: 190px;
+    height: auto;
+}
+
+.title {
+     font-family: "eight", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+      font-size: 5vw;
+      letter-spacing: 3px;
+      position: fixed;
+      top: 1%;
+      text-align: center;
+      z-index: 2;
+      left: 4%;
+      -webkit-text-fill-color: white;
+      -webkit-text-stroke: 1.25px;
+      -webkit-text-stroke-color: #696969;
+
+}
+
+.containerlinksleft {
+    display: grid;
+    position: fixed;
+    grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15% 15% 15%;
+    grid-template-columns: 100%;
+    left: -2%;
+    top: 18%;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding-left: 200px;
+    padding-right: 15px;
+    padding-bottom: 190px;
+    padding-top: 20px;
+
+}
+
+.link1, .link2, .link3, .link4, .link5, .link6, .link7, .link8, .link9, .conclusion {
+    font-family: "ltc-francis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 2.5vw;
+    -webkit-text-fill-color: #696969;
+
+}
+
+a {
+ color: black;
+ text-decoration: none;
+}
+
+@media screen and (max-width: 800px){
+    .containerlinksleft {
+        padding-top: 15px;
+        padding-bottom: 190px;
+        padding-right: 15px;
+        padding-left: 55px;
+        position: fixed;
+        left: -5%;
+        top: 11%;
+    }
+    .week1, .week2, .week3, .week4, .week5, .week6, .week7, .week8, .week9 {
+        width: 125px;
+        height: auto;
+    }
+    .containersmall{
+        display: grid;
+        position: fixed;
+        top: 18%;
+        left: 15%;
+        grid-template-columns: 35% 35% 35%;
+        grid-template-rows: 55% 55% 55%;
+    }
+    .containerbig{
+        display: none
+    }
+    .link1, .link2, .link3, .link4, .link5, .link6, .link7, .link8, .link9, .conclusion {
+        line-height: 8vw;
+        -webkit-text-fill-color: black;
+    }
+    .title {
+        -webkit-text-stroke: 0px;
+        -webkit-text-fill-color: black;
+    }
+    .containerlinksleft{
+        border-color: black;
+    }
+}
