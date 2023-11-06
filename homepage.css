@@ -91,7 +91,7 @@ a {
         display: grid;
         position: fixed;
         top: 18%;
-        left: 15%;
+        left: 5%;
         grid-template-columns: 35% 35% 35%;
         grid-template-rows: 55% 55% 55%;
     }
@@ -100,13 +100,13 @@ a {
     }
     .link1, .link2, .link3, .link4, .link5, .link6, .link7, .link8, .link9, .conclusion {
         line-height: 8vw;
-        -webkit-text-fill-color: black;
+        -webkit-text-fill-color: white;
     }
     .title {
         -webkit-text-stroke: 0px;
         -webkit-text-fill-color: black;
     }
     .containerlinksleft{
-        border-color: black;
+        border-color: white;
     }
 }
