@@ -193,8 +193,13 @@ html {
       display: block; 
     }
 
+    .genretext, .artisttext, .tracktext {
+        display: grid;
+        grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+          justify-items: center;
 
-    .genredetails {
+    }
+    /* .genredetails {
        
         height: 250px;
         position: absolute;
@@ -216,7 +221,7 @@ html {
         position: absolute;
         left: 16%;
         top: 99%;
-    }
+    } */
 
     .title {
         font-size: 10vw
