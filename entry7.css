@@ -30,6 +30,14 @@ html {
     left: 40%
 }
 
+.image1 {
+    position: fixed;
+    height: 400px;
+    left: 61%;
+    bottom: 0;
+
+}
+
 .containersmall {
     display: none
 }
@@ -255,6 +263,10 @@ html {
         bottom: 2%;
         left: 87%;
     }    
+
+    .image1 {
+        height: 300px;
+    }
 
     
 }
