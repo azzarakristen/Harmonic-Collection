@@ -205,7 +205,7 @@ html {
     .genredetails {
        
         height: 230px;
-        position: fixed;
+        position: absolute;
         left: 13%;
         top: 29%;
         
@@ -213,7 +213,7 @@ html {
 
     .artistdetails {
         height: 230px;
-        position: fixed;
+        position: absolute;
         left: 11.2%;
         top: 65%;
         
@@ -221,7 +221,7 @@ html {
 
     .trackdetails {
         height: 230px;
-        position: fixed;
+        position: absolute;
         left: 13%;
         top: 99%;
     }
