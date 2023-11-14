@@ -265,6 +265,9 @@ html {
     }    
 
     .image1 {
+        position: fixed;
+        bottom: 0;
+        left: 60%;
         height: 300px;
     }
 
