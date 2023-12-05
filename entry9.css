@@ -338,7 +338,7 @@ body {
         height: 275px;
     }
     #notes-tab {
-        padding-left: 165px;
+        padding-left: 125px;
     }
     #notes-content {
         font-size: 14px;
@@ -353,7 +353,7 @@ body {
     }
     .image1 {
         position: absolute;
-        bottom: 45%;
+        bottom: 40%;
         left: 37%;
     }
     
