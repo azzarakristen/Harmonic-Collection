@@ -1,0 +1,370 @@
+html {
+    background-color: #ffbfea
+}
+body {
+    margin: 0;
+    font-family: "filson-soft", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title {
+    -webkit-text-fill-color: black;
+    border-radius: 3px; 
+    font-family: "eight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vw;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 20px;
+}
+
+.title2 {
+    font-family: "ltc-francis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 2.5vw;
+    color: white;
+    margin-right: 1.5%;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    padding-top: 20px;
+}
+
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 80px; 
+    
+}
+
+.page-container-2 {
+    display: none;
+}
+
+.grid-container {
+    position: fixed;
+    bottom: 17%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    box-sizing: border-box;
+    border: 6px solid white;
+    border-radius: 200px;
+    background-color: #e3e4e8;
+    padding: 30px;
+}
+
+.grid-item {
+    position: relative;
+}
+/* Define the spinning animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* container for spin */
+.circle {
+    width: 350px; /* Adjust the size as needed */
+    height: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* spin */
+.spin-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: spin 5s linear infinite; 
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px; 
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease;
+    padding: 300px; /* Padding for the border box */
+    background-color: #c60982; 
+    width: 75%;
+  
+}
+
+.grid-item:nth-child(2) .spin-image .center-text {
+    background-color: #d654a1 
+}
+
+.grid-item:nth-child(3) .spin-image .center-text {
+    background-color: #ea94cf; 
+}
+
+
+
+/* Show text on hover */
+.grid-item:hover .spin-image .center-text {
+    opacity: 1;
+}
+
+.image1 {
+    position: fixed;
+    height: 400px;
+    left: 89%;
+    bottom: 0;
+}
+
+#notes-tab {
+    font-family: "ltc-francis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    color: black;
+    padding-left: 437px;
+    padding-right: 10px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  
+}
+
+#up-arrow {
+    display: inline-block;
+    margin-left: 5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+}
+
+#notes-content {
+    font-family: "ltc-francis", sans-serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    position: fixed;
+    bottom: 49px;
+    left: 0;
+    background-color: #e3e4e8;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.hidden {
+    display: none;
+    
+}
+
+#up-arrow.down-arrow {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+    border-bottom: none;
+}
+
+.previous, .next, .home {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: fixed;
+    bottom: 2%;
+}
+.previous  {
+    left: 45%;
+}
+
+.next {
+    right: 45%;
+}
+
+.home {
+    left: 48%;
+}
+
+@media screen and (max-width: 1200px){
+    .circle {
+        width: 325px;
+        height: 325px;
+    }
+    .title2 {
+        top: 20%;
+        font-size: 60px;
+    }
+    .title {
+        font-size: 85px;
+        padding-top: 60px;
+    }
+    #notes-tab {
+        padding-left: 340px;
+    }
+    .next {
+        right: 43%;
+    }
+    .page-container-2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .circle {
+        width: 290px;
+        height: 290px;
+    }
+    .grid-container {
+        gap: 10px;
+    }
+    #notes-tab {
+        padding-left: 270px;
+    }
+    .page-container-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid-container-2 {
+        grid-template-columns: 1fr;
+
+        
+
+    }
+    .circle {
+        width: 400px;
+        height: 400px;
+        
+
+    }
+
+    .page-container {
+        display: none
+    }
+
+    .page-container-2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .grid-container-2 {
+        gap: 40px;
+        box-sizing: border-box;
+      border: 6px solid white;
+      border-radius: 200px;
+      background-color: #e3e4e8;
+      padding: 30px;
+      display: grid;
+      
+    }
+    .title {
+        padding-top: 20px;
+        padding-bottom: 150px;
+    }
+    .title2 {
+        top: 10%;
+        padding-bottom: 20px;
+        left: 35%;
+    }
+    #notes-content {
+        font-size: 20px;
+    }
+
+    .image1 {
+        left: 8%;
+        bottom: 5%;
+    }
+    .previous {
+        left: 71%;
+    }
+    .home {
+        left: 76%;
+     
+    }
+    .next {
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .circle {
+        width: 340px;
+        height: 340px;
+    }
+    .image1 {
+        height: 300px;
+        left: 5%;
+    }
+    .previous {
+        left: 69%;
+    }
+    .home {
+        left: 74%;
+    }
+    .next {
+        right: 12%;
+    }
+    .title2 {
+        left: 27%;
+        top: 125px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .circle {
+        width: 275px;
+        height: 275px;
+    }
+    #notes-tab {
+        padding-left: 165px;
+    }
+    #notes-content {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 50px;
+        padding-bottom: 400px;
+    }
+    .title2 {
+        left: 22%;
+        font-size: 50px;
+    }
+    .image1 {
+        position: absolute;
+        bottom: 45%;
+        left: 37%;
+    }
+    
+    .previous {
+        left: 65%;
+    }
+    .home {
+        left: 70%;
+    }
+    .next {
+        right: 10%;
+    }
+}
+

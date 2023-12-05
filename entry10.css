@@ -1,0 +1,101 @@
+html {
+    margin: 20px;
+}
+
+/* h1 {
+    -webkit-text-fill-color: black;
+    border-radius: 3px; 
+    font-family: "ltc-francis", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   
+    font-size: 4vw;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 3px;
+} */
+
+.genres, .songs, .artists, .favorites {
+    font-size: 3vw;
+    font-family: "filson-soft", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 3.5vw;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 20px;
+   
+}
+
+.genrestitle, .artiststitle, .songstitle, .favoritestitle {
+    font-family: "eight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vw;
+    line-height: 5.2vw;
+    padding: 40px;
+    padding-bottom: 75px;
+}
+
+
+.genres {
+    text-align: right;
+    background-color: #d8b8ff;
+}
+.songs {
+    background-color: #a2e6f5;
+}
+
+.artists {
+    text-align: right;
+    background-color: #f2a7e1;
+}
+
+.favorites {
+    background-color: #a2d4a1;
+}
+
+.previous,  .home {
+    box-sizing: border-box;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    position: fixed;
+    font-size: 24px;
+    font-family: "filson-soft", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.previous {
+    top: 7%;
+    left: 4%;
+}
+
+.home {
+    top: 7%;
+    left: 6%;
+}
+
+@media screen and (max-width: 800px){
+    .previous {
+        top: 6%;
+        left: 7%;
+        font-size: 14px;
+    }
+    .home {
+        top: 6%;
+        left: 12%;
+        font-size: 14px;
+    }
+    .genres, .songs, .artists, .favorites {
+        
+        border-radius: 25px;
+        
+       
+    }
+}
