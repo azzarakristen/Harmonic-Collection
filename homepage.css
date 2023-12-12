@@ -115,6 +115,10 @@ a {
    
 }
 
+.end:hover {
+    background-color: #9599a1;
+}
+
 
 /* media queries */
 @media screen and (max-width: 800px) {
