@@ -22,7 +22,7 @@ html {
     font-family: "eight", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4.75vw;
+    font-size: 60px;
     line-height: 70px;
     text-align: center;
     letter-spacing: 3px;
@@ -254,4 +254,185 @@ html {
     border-right: 10px solid transparent;
     border-top: 10px solid black;
     border-bottom: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .circle {
+      width: 300px;
+      height: 300px;
+    }
+    .image1 {
+      height: 350px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .circle {
+      width: 270px;
+      height: 270px;
+    }
+    .image1 {
+      height: 300px;
+    }
+    .title {
+      font-size: 50px;
+    }
+    .home, .previous, .date, .next, #notes-tab {
+      font-size: 28px;
+    }
+    .directions {
+      right: 37%;
+    }
+    .center-text {
+      font-size: 18px;
+    }
+    #notes-content {
+      
+      top: 85px;
+    }
+    
+  }
+  @media screen and (max-width: 790px) {
+    .circle {
+      width: 220px;
+      height: 220px;
+    }
+    .image1 {
+      height: 250px;
+    }
+    .title {
+      font-size: 50px;
+    }
+    .home, .previous, .date, .next, #notes-tab {
+      font-size: 20px;
+    }
+    .directions {
+      right: 37%;
+    }
+    .center-text {
+      font-size: 16px
+    }
+    #notes-content {
+      font-size: 15px;
+      top: 70px;
+    }
+    #notes-tab, .home {
+      font-size: 20px;
+      top: 10%;
+    }
+    
+  }
+  @media screen and (max-width: 680px) {
+
+    .page-container{
+      display: none;
+      }
+    .page-container-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      
+      }
+    .grid-container-2 {
+      gap: 40px;
+      box-sizing: border-box;
+    border: 6px solid white;
+    border-radius: 200px;
+    background-color: #e3e4e8;
+    padding: 30px;
+    display: grid;
+    
+    }
+    .circle {
+      width: 300px;
+      height: 300px;
+    }
+    .image1 {
+      height: 300px;
+      right: 80%;
+    }
+    .title {
+      font-size: 50px;
+    }
+    .previous, .date, .next {
+      font-size: 20px;
+    }
+    .directions {
+      right: 37%;
+    }
+    .center-text {
+      font-size: 16px
+    }
+    .directions {
+      bottom: 85%;
+      right: 33%
+    }
+    #notes-content {
+      font-size: 15px;
+      top: 70px;
+    }
+    #notes-tab, .home {
+      font-size: 20px;
+      top: 10%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+   
+    .title {
+      font-size: 40px;
+    }
+    .descrip {
+      font-size: 20px;
+    }
+    .directions {
+      right: 31%
+    }
+  }
+  @media screen and (max-width: 350px) {
+  
+
+    .directions {
+      right: 25%;
+      bottom: 68%;
+      font-size: 14px;
+    }
+    #notes-content {
+      font-size: 12px;
+      top: 120px;
+    }
+    .circle {
+      height: 200px;
+      width: 200px;
+    }
+    .image1 {
+      height: 200px;
+      right: 75%;
+    }
+    #notes-tab, .home {
+      font-size: 15px;
+      top: 15%;
+    }
+    #notes-content {
+      top: 150px;
+      font-size: 10px;
+    }
+
+  }
+
+  @media screen and (max-width: 300px) {
+    .circle {
+      height: 190px;
+      width: 190px;
+    }
+    #notes-tab, .home {
+      top: 15%
+    }
+    .title {
+      font-size: 25px
+    }
+    .directions {
+      bottom: 68%;
+      right: 20%;
+    }
   }

@@ -322,14 +322,14 @@ html {
 
     .page-container{
       display: none;
-    }
+      }
     .page-container-2 {
       display: flex;
       align-items: center;
       justify-content: center;
       
       
-    }
+      }
     .grid-container-2 {
       gap: 40px;
       box-sizing: border-box;
@@ -339,7 +339,7 @@ html {
     padding: 30px;
     display: grid;
     
-  }
+    }
     .circle {
       width: 300px;
       height: 300px;
@@ -351,7 +351,7 @@ html {
     .title {
       font-size: 50px;
     }
-    .home, .previous, .date, .next, #notes-tab {
+    .previous, .date, .next {
       font-size: 20px;
     }
     .directions {
@@ -368,12 +368,14 @@ html {
       font-size: 15px;
       top: 70px;
     }
+    #notes-tab, .home {
+      font-size: 20px;
+      top: 10%;
+    }
   }
 
   @media screen and (max-width: 500px) {
-    #notes-tab, .home {
-      top: 10%;
-    }
+   
     .title {
       font-size: 40px;
     }

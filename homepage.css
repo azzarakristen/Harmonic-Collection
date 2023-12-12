@@ -110,51 +110,32 @@ a {
    
 }
 
-
-
 @media screen and (max-width: 800px) {
     .containerbig {
-        width: 90%;
+        gap: 10px;
     }
-    
-    .week1, .week2, .week3, .week4, .week5, .week6, .week7, .week8, .week9 {
-        width: 125px;
-        height: auto;
+    .title {
+        left: 4%;
     }
-
-    .containerlinksleft {
-        padding-top: 15px;
-        padding-bottom: 190px;
-        padding-right: 15px;
-        padding-left: 55px;
-        position: fixed;
-        left: -5%;
-        top: 11%;
-    }
-    .week1, .week2, .week3, .week4, .week5, .week6, .week7, .week8, .week9 {
-        width: 125px;
-        height: auto;
+}
+@media screen and (max-width:600px) {
+    .containerbig {
+        display: none
     }
     .containersmall{
         display: grid;
-        position: fixed;
-        top: 18%;
-        left: 5%;
-        grid-template-columns: 35% 35% 35%;
-        grid-template-rows: 55% 55% 55%;
+        grid-template-columns: repeat(1, 1fr);
+     gap: 50px; /* Adjust the gap between items as needed */
+     width: 100%; 
+     margin: auto;
+
+     position: absolute;
+     top: 30%;
     }
-    .containerbig{
-        display: none
-    }
-    .link1, .link2, .link3, .link4, .link5, .link6, .link7, .link8, .link9, .conclusion {
-        line-height: 8vw;
-        -webkit-text-fill-color: white;
+    .week1, .week2, .week3, .week4, .week5, .week6, .week7, .week8, .week9 {
+        width: 300px;
     }
     .title {
-        -webkit-text-stroke: 0px;
-        -webkit-text-fill-color: black;
-    }
-    .containerlinksleft{
-        border-color: white;
+        left: 0%;
     }
 }
