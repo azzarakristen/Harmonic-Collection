@@ -4,108 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>entry8</title>
+    <link rel="stylesheet" href="entry8.css">
     <link rel="stylesheet" href="https://use.typekit.net/crr8yoh.css">
-    <link rel="stylesheet" href="entry8.css" />
-    
 </head>
 <body>
     
-       
-            <div class="avatar">
-                <img src="me8.png" class="image1">
-            </div>
-        
-
-       
-     <div class="title">
+    <!-- TITLES -->
+    <div class="title">
         <marquee behavior="scroll" 
-        direction="left" 
-        scrollamount="14"
-        onmouseover="this.stop();"
-        onmouseout="this.start();" >
-        MUSIC ANALYSIS</marquee></div> <br><br>
-        <div class="title2">
-            october 29 - november 4
-        </div>
-           
-        <div class="containerbig">
-            <div class="genres">
-                <img src="genres8.gif" class="vinyl1">
-                     <div class="genretext">
-                        <img src="genres8.png" class="genredetails">
-                     </div>
-            </div>
-
-            <div class="artists">
-                <img src="artists8.gif" class="vinyl2">
-                    <div class="artisttext">
-                        <img src="artists8.png" class="artistdetails">
-                    </div>
-            </div>
-
-            <div class="tracks">
-                 <img src="tracks8.gif" class="vinyl3">
-                    <div class="tracktext">
-                        <img src="tracks8.png" class="trackdetails">
-                    </div>
-            </div> 
-        
-        </div>
-
-        <div class="containersmall">
-            <div class="genres">
-                <img src="genres8.gif" class="vinyl1">
-                     <div class="genretext">
-                        <img src="genres8.png" class="genredetails">
-                     </div>
-            </div>
-
-            <div class="artists">
-                <img src="artists8.gif" class="vinyl2">
-                    <div class="artisttext">
-                        <img src="artists8.png" class="artistdetails">
-                    </div>
-            </div>
-
-            <div class="tracks">
-                 <img src="tracks8.gif" class="vinyl3">
-                    <div class="tracktext">
-                        <img src="tracks8.png" class="trackdetails">
-                    </div>
-            </div> 
-        
-        </div>
-
-        
-       
-        
-       
-                
-                <div id="notes-tab">
-                    notes
-                    <div id="up-arrow"></div>
-                </div>
-            
-                <div id="notes-content" class="hidden">
-                    <!-- Add your text content for notes here -->
-                    i'm currently working on a book about prince for my studio <br> class. i listen to prince
-                    whenever i need to get inspiration, so <br> i've been obsessed with him this week!!
-                   
-                </div>
-                
-                    <!-- Link your JavaScript file -->
-                    <script src="entry8.js"></script>
-
-
-                    <a class="previous" href="entry7.html"> < </a>
-                    <a class="next" href="entry9.html"> > </a>
-        </body>
-        </html>
-        
-        </body>
-        </html>
-        
+                 direction="left" 
+                 scrollamount="14"
+                 onmouseover="this.stop();"
+                 onmouseout="this.start();">
+          <a href="https://open.spotify.com/album/7nXJ5k4XgRj5OLg9m8V3zc" class="marquee-link">
+            <span class="descrip"> TOP SONG:</span> when doves cry 
+            <span class="descrip"> - PRINCE, PURPLE RAIN</span>
+          </a>
+        </marquee>
+      </div>
+      
 
 
     
+       <div class="directions">
+            hover or click to explore!</div>
+       
+    <div class="navigation">
+        <div class="navigation-container" >
+            <a class="home" href="homepage.html"> HOME </a>
+                 <!-- NOTES TAB -->
+            <div id="notes-tab">
+                NOTES
+                <div id="down-arrow"></div>
+            </div>
+        
+            <div id="notes-content" class="hidden">
+                
+                I've always loved Prince, but I'm working on a <br>
+                project about him for my Studio class. Every time <br>
+                I work on it I listen to him, so I've been obsessed.
+               
+            </div>
+
+            <div class="navigation-item" id="left">
+                <a class="previous" href="entry7.html"> < </a>
+            </div>
+             <div class="navigation-item" id="date">
+                    <h1 class="date"> OCTOBER 29 - NOVEMBER 4</h1>
+             </div>
+             <div class="navigation-item" id="right">
+                <a class="next" href="entry9.html"> > </a>
+             </div>
+
+        </div>
+        
+    </div>
+
+    <!-- GRID OF SPINNING RECORDS -->
+    <div class="page-container">
+        <div class="grid-container">
+            <div class="grid-item" id="item1">
+                <div class="circle spin-image">
+                    <img src="W6A.png" alt="Image 1">
+                    <span class="center-text">
+                        22.9% rap/hip hop; 16.1% rock; 15.3% pop; 14.4% funk/disco; 11.1% rock ballad; 7.6% house/electronic; 
+                        4.2% jazz; 2.5% r&b/soul; 2.5% theater; 1.7% indie; 1.7% folk/acoustic
+                    </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item2">
+                <div class="circle spin-image">
+                    <img src="W6B.png" alt="Image 2">
+                    <span class="center-text">
+                        Of 48 
+                        artists, the top 3
+                        most-listened-to were
+                        Prince, Madonna, and Stevie Wonder. </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item3">
+                <div class="circle spin-image">
+                    <img src="W6C.png" alt="Image 3">
+                    <span class="center-text">
+                        Of 118 tracks, the 
+                        most-listened-to song was 
+                        When Doves Cry.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRID FOR SMALL MEDIA QUERY -->
+     
+     <div class="page-container-2">
+        <div class="grid-container-2">
+            <div class="grid-item" id="item1">
+                <div class="circle spin-image">
+                    <img src="W6A.png" alt="Image 1">
+                    <span class="center-text">
+                        20.9% rap/hip hop; 16.5% funk/disco; 13.1% rock; 11.3%
+                         r&b/soul; 10.4% folk/
+                        acoustic; 10.4% pop; 9.6% 
+                        indie; 3.5% rock ballad; 
+                        2.6% jazz; 1.7% 
+                        house/electronic</span>
+                </div>
+            </div>
+            <div class="grid-item" id="item2">
+                <div class="circle spin-image">
+                    <img src="W6B.png" alt="Image 2">
+                    <span class="center-text">
+                        Of 53 
+                        artists, the top 3
+                        most-listened-to were
+                        Prince, Drake, 
+                        and Stevie Wonder. </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item3">
+                <div class="circle spin-image">
+                    <img src="W6C.png" alt="Image 3">
+                    <span class="center-text">
+                        Of 115 tracks, the 
+                        most-listened-to song was 
+                        When You Were Mine.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AVATAR -->
+    <div class="avatar">
+        <img src="me6a.png" class="image1">
+    </div>
+
+   
+    
+    
+       
+        <script src="entry9.js"></script>
+
+        
+        <!-- <a class="previous" href="entry8.html"> < </a>
+        <a class="next" href="entry10.html"> > </a>
+        <a class="home" href="homepage.html"> home </a> -->
+
+
 </body>
+</html>

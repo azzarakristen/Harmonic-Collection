@@ -4,66 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>entry5</title>
+    <link rel="stylesheet" href="entry5.css">
     <link rel="stylesheet" href="https://use.typekit.net/crr8yoh.css">
-    <link rel="stylesheet" href="https://use.typekit.net/crr8yoh.css">
-    <link rel="stylesheet" href="entry5.css" />
-    
 </head>
 <body>
     
-       
-            <div class="avatar">
-                <img src="me5.png" class="image1">
-            </div>
-        
-       <div class="collage">
-        
-
-        </div>
-       
-     <div class="title">
+    <!-- TITLES -->
+    <div class="title">
         <marquee behavior="scroll" 
-        direction="left" 
-        scrollamount="14"
-        onmouseover="this.stop();"
-        onmouseout="this.start();" >
-        OCTOBER 8   -   OCTOBER 14</marquee></div> <br><br>
-        <div class="title2">
-            MUSIC ANALYSIS
-            <img src="headphones.png" class="pngheadphones">
-            <img src="musicfolder.png" class="pngfolder">
-            <img src="guitar.png" class="pngguitar">
-            <img src="ipod.png" class="pngipod"></div> <br>
-         
-       
-        <div class="genres">
-            <img src="bluevinyl.gif" class="vinyl1">
-            <div class="genretext">
-                <img src="genres5.png" class="genredetails">
+                 direction="left" 
+                 scrollamount="14"
+                 onmouseover="this.stop();"
+                 onmouseout="this.start();">
+          <a href="https://open.spotify.com/album/4czdORdCWP9umpbhFXK2fW" class="marquee-link">
+            <span class="descrip"> TOP SONG:</span> tried our best
+            <span class="descrip"> - DRAKE, FOR ALL THE DOGS</span>
+          </a>
+        </marquee>
+      </div>
+      
 
-            </div>
-        </div>
-        <div class="artists">
-           <img src="pinkvinyl.gif" class="vinyl2">
-           <div class="artisttext">
-                <img src="artists5.png" class="artistdetails">
-           </div>
-        </div>
+
     
-        <div class="tracks">
-            <img src="yellowvinyl.gif" class="vinyl3">
-            <div class="tracktext">
-                <img src="tracks5.png" class="trackdetails">
+       <div class="directions">
+            hover or click to explore!</div>
+       
+    <div class="navigation">
+        <div class="navigation-container" >
+            <a class="home" href="homepage.html"> HOME </a>
+                 <!-- NOTES TAB -->
+            <div id="notes-tab">
+                NOTES
+                <div id="down-arrow"></div>
             </div>
         
+            <div id="notes-content" class="hidden">
+                
+                Drake released a new album this week!
+                <br>There are a few songs I am obsessed <br>with already, 
+                like Tried Our Best.
+               
+            </div>
+
+            <div class="navigation-item" id="left">
+                <a class="previous" href="entry4.html"> < </a>
+            </div>
+             <div class="navigation-item" id="date">
+                    <h1 class="date"> OCTOBER 8 - 14</h1>
+             </div>
+             <div class="navigation-item" id="right">
+                <a class="next" href="entry6.html"> > </a>
+             </div>
+
         </div>
-       
-        <a class="previous" href="entry4.html">Previous</a>
-        <a class="next" href="entry6.html">Next</a>
-       
+        
+    </div>
+
+    <!-- GRID OF SPINNING RECORDS -->
+    <div class="page-container">
+        <div class="grid-container">
+            <div class="grid-item" id="item1">
+                <div class="circle spin-image">
+                    <img src="W5A.png" alt="Image 1">
+                    <span class="center-text">
+                        37.9% rap/hip hop; 15.9% r&b/soul; 11.4% jazz; 10.6% rock; 
+                        9.1% house/electronic; 6.1% pop; 4.4% folk/acoustic; 3.8% indie; 0.8% funk/disco
+                    </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item2">
+                <div class="circle spin-image">
+                    <img src="W5B.png" alt="Image 2">
+                    <span class="center-text">
+                        Of 51 
+                        artists, the top 3
+                        most-listened-to were
+                        Drake, Greta Van Fleet, and Lil Wayne. </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item3">
+                <div class="circle spin-image">
+                    <img src="W5C.png" alt="Image 3">
+                    <span class="center-text">
+                        Of 132 tracks, the 
+                        most-listened-to song was 
+                        Tried Our Best.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRID FOR SMALL MEDIA QUERY -->
+     
+     <div class="page-container-2">
+        <div class="grid-container-2">
+            <div class="grid-item" id="item1">
+                <div class="circle spin-image">
+                    <img src="W5A.png" alt="Image 1">
+                    <span class="center-text">
+                        20.9% rap/hip hop; 16.5% funk/disco; 13.1% rock; 11.3%
+                         r&b/soul; 10.4% folk/
+                        acoustic; 10.4% pop; 9.6% 
+                        indie; 3.5% rock ballad; 
+                        2.6% jazz; 1.7% 
+                        house/electronic</span>
+                </div>
+            </div>
+            <div class="grid-item" id="item2">
+                <div class="circle spin-image">
+                    <img src="W5B.png" alt="Image 2">
+                    <span class="center-text">
+                        Of 53 
+                        artists, the top 3
+                        most-listened-to were
+                        Prince, Drake, 
+                        and Stevie Wonder. </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item3">
+                <div class="circle spin-image">
+                    <img src="W5C.png" alt="Image 3">
+                    <span class="center-text">
+                        Of 115 tracks, the 
+                        most-listened-to song was 
+                        When You Were Mine.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AVATAR -->
+    <div class="avatar">
+        <img src="me5a.png" class="image1">
+    </div>
+
+   
     
-
-
-
     
+       
+        <script src="entry9.js"></script>
+
+        
+        <!-- <a class="previous" href="entry8.html"> < </a>
+        <a class="next" href="entry10.html"> > </a>
+        <a class="home" href="homepage.html"> home </a> -->
+
+
 </body>
+</html>

@@ -4,108 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>entry7</title>
+    <link rel="stylesheet" href="entry7.css">
     <link rel="stylesheet" href="https://use.typekit.net/crr8yoh.css">
-    <link rel="stylesheet" href="entry7.css" />
-    
 </head>
 <body>
     
-       
-            <div class="avatar">
-                <img src="me7.png" class="image1">
-            </div>
-        
-
-       
-     <div class="title">
+    <!-- TITLES -->
+    <div class="title">
         <marquee behavior="scroll" 
-        direction="left" 
-        scrollamount="14"
-        onmouseover="this.stop();"
-        onmouseout="this.start();" >
-        MUSIC ANALYSIS</marquee></div> <br><br>
-        <div class="title2">
-            october 22 - 28
-        </div>
-           
-        <div class="containerbig">
-            <div class="genres">
-                <img src="genres7.gif" class="vinyl1">
-                     <div class="genretext">
-                        <img src="genres7.png" class="genredetails">
-                     </div>
-            </div>
-
-            <div class="artists">
-                <img src="artists7.gif" class="vinyl2">
-                    <div class="artisttext">
-                        <img src="artists7.png" class="artistdetails">
-                    </div>
-            </div>
-
-            <div class="tracks">
-                 <img src="tracks7.gif" class="vinyl3">
-                    <div class="tracktext">
-                        <img src="tracks7.png" class="trackdetails">
-                    </div>
-            </div> 
-        
-        </div>
-
-        <div class="containersmall">
-            <div class="genres">
-                <img src="genres7.gif" class="vinyl1">
-                     <div class="genretext">
-                        <img src="genres7.png" class="genredetails">
-                     </div>
-            </div>
-
-            <div class="artists">
-                <img src="artists7.gif" class="vinyl2">
-                    <div class="artisttext">
-                        <img src="artists7.png" class="artistdetails">
-                    </div>
-            </div>
-
-            <div class="tracks">
-                 <img src="tracks7.gif" class="vinyl3">
-                    <div class="tracktext">
-                        <img src="tracks7.png" class="trackdetails">
-                    </div>
-            </div> 
-        
-        </div>
-
-        
-       
-        
-       
-                
-                <div id="notes-tab">
-                    notes
-                    <div id="up-arrow"></div>
-                </div>
-            
-                <div id="notes-content" class="hidden">
-                    <!-- Add your text content for notes here -->
-                    this week i listened to a lot of artists from my childhood. <br> earth wind and fire and louis armstrong
-                    are examples <br>of artists that my parents would listen to when i was a kid. <br> i think i am feeling
-                    nostalgic with the holidays coming up.
-                </div>
-                
-                    <!-- Link your JavaScript file -->
-                    <script src="entry7.js"></script>
-
-
-                    <a class="previous" href="entry6.html"> < </a>
-                    <a class="next" href="entry8.html"> > </a>
-        </body>
-        </html>
-        
-        </body>
-        </html>
-        
+                 direction="left" 
+                 scrollamount="14"
+                 onmouseover="this.stop();"
+                 onmouseout="this.start();">
+          <a href="https://open.spotify.com/album/6DlSUW5gmq6Byc3osKDJ2p" class="marquee-link">
+            <span class="descrip"> TOP SONG:</span> only a fool would say that
+            <span class="descrip"> - STEELY DAN, CAN'T BUY A THRILL</span>
+          </a>
+        </marquee>
+      </div>
+      
 
 
     
+       <div class="directions">
+            hover or click to explore!</div>
+       
+    <div class="navigation">
+        <div class="navigation-container" >
+            <a class="home" href="homepage.html"> HOME </a>
+                 <!-- NOTES TAB -->
+            <div id="notes-tab">
+                NOTES
+                <div id="down-arrow"></div>
+            </div>
+        
+            <div id="notes-content" class="hidden">
+                
+                Disco and funk music have been kind of my go-to on my <br>
+                way to and from class. I've been listening to songs that <br>
+                remind me of home! Steely Dan and Earth Wind and Fire <br>
+                remind me of my family, especially my dad.
+               
+            </div>
+
+            <div class="navigation-item" id="left">
+                <a class="previous" href="entry6.html"> < </a>
+            </div>
+             <div class="navigation-item" id="date">
+                    <h1 class="date"> OCTOBER 22 - 28</h1>
+             </div>
+             <div class="navigation-item" id="right">
+                <a class="next" href="entry8.html"> > </a>
+             </div>
+
+        </div>
+        
+    </div>
+
+    <!-- GRID OF SPINNING RECORDS -->
+    <div class="page-container">
+        <div class="grid-container">
+            <div class="grid-item" id="item1">
+                <div class="circle spin-image">
+                    <img src="W7A.png" alt="Image 1">
+                    <span class="center-text">
+                        18.7% funk/disco; 18.1% rap/hip hop; 17.5% rock; 13.9% pop; 7.8% house/electronic; 
+                        6.6% jazz; 6.6% r&b/soul; 6% folk/acoustic; 4.8% indie
+                    </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item2">
+                <div class="circle spin-image">
+                    <img src="W7B.png" alt="Image 2">
+                    <span class="center-text">
+                        Of 61 
+                        artists, the top 3
+                        most-listened-to were
+                        Earth Wind and Fire, Drake, and a tie between Steely Dan and Stevie Wonder. </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item3">
+                <div class="circle spin-image">
+                    <img src="W7C.png" alt="Image 3">
+                    <span class="center-text">
+                        Of 166 tracks, the 
+                        most-listened-to song was 
+                        Only a Fool Would Say That.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRID FOR SMALL MEDIA QUERY -->
+     
+     <div class="page-container-2">
+        <div class="grid-container-2">
+            <div class="grid-item" id="item1">
+                <div class="circle spin-image">
+                    <img src="W7A.png" alt="Image 1">
+                    <span class="center-text">
+                        18.7% funk/disco; 18.1% rap/hip hop; 17.5% rock; 13.9% pop; 7.8% house/electronic; 
+                        6.6% jazz; 6.6% r&b/soul; 6% folk/acoustic; 4.8% indie
+                    </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item2">
+                <div class="circle spin-image">
+                    <img src="W7B.png" alt="Image 2">
+                    <span class="center-text">
+                        Of 61 
+                        artists, the top 3
+                        most-listened-to were
+                        Earth Wind and Fire, Drake, and a tie between Steely Dan and Stevie Wonder. </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item3">
+                <div class="circle spin-image">
+                    <img src="W7C.png" alt="Image 3">
+                    <span class="center-text">
+                        Of 166 tracks, the 
+                        most-listened-to song was 
+                        Only a Fool Would Say That.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AVATAR -->
+    <div class="avatar">
+        <img src="me7a.png" class="image1">
+    </div>
+
+   
+    
+    
+       
+        <script src="entry9.js"></script>
+
+        
+        <!-- <a class="previous" href="entry8.html"> < </a>
+        <a class="next" href="entry10.html"> > </a>
+        <a class="home" href="homepage.html"> home </a> -->
+
+
 </body>
+</html>

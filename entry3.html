@@ -4,104 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>entry3</title>
+    <link rel="stylesheet" href="entry3.css">
     <link rel="stylesheet" href="https://use.typekit.net/crr8yoh.css">
-    <link rel="stylesheet" href="https://use.typekit.net/crr8yoh.css">
-    <link rel="stylesheet" href="entry3.css" />
-    
 </head>
-<!-- <body>
-    <div class="container">
-        <div class="wrapme">
-            <img src="me-3.png" class="image1">
-        </div>
-        <div class="chart">
-            <img src="color-with-fill.png" class="image2" alt="Some Image" />
-            <div class="tooltip-content">
-                Kristen listened to 152 songs and 71 artists this week. Of 9 genres,
-                <span class="rap"> Rap and Hip-Hop</span> were the most listened to at 21.1%, followed by <span class="rock"> rock,</span> 20.4%; <span class="pop"> pop, </span>15.7%; 
-                <span class="indie"> indie,</span> 15.1%; <span class="rb"> r&b/soul, </span>11.2%; <span class="jazz"> jazz, </span>8.5%; <span class="funk"> funk/disco, </span>3.9%; 
-                <span class="edm"> electronic/dance,</span> 2.6%; and <span class="bossa"> bossa nova, </span>1.5%. 
-            </div>
-        </div> 
-        <div class="title">
-        SEPTEMBER 24 - SEPTEMBER 30</div> <br><br>
-        <div class="title2">
-            MUSIC ANALYSIS</div> <br>
-        <div class="genres">
-            <span class="pinkstroke">
-            Top Genres: </span><br> Rap/Hip-Hop <br> Rock <br> Pop
-        </div>
-       <div class="artists">
-            <span class="pinkstroke">
-                Top Artists:
-            </span> <br>Greta Van Fleet<br>Drake<br>Bruno Mars
-        </div>
-        <div class="toptrack">
-            <span class="pinkstroke">
-                Top Track:
-            </span><br> Stardust Chords
-        </div>
-        <a href="entry2copy.html">Entry 2</a>
-    </div>
-
-
-
-    
-</body> -->
 <body>
     
+    <!-- TITLES -->
+    <div class="title">
+        <marquee behavior="scroll" 
+                 direction="left" 
+                 scrollamount="14"
+                 onmouseover="this.stop();"
+                 onmouseout="this.start();">
+          <a href="https://open.spotify.com/album/7kjLKy9JLbwM9F7eDQEnd2" class="marquee-link">
+            <span class="descrip"> TOP SONG:</span> stardust chords 
+            <span class="descrip"> - GRETA VAN FLEET, THE BATTLE AT GARDEN'S GATE</span>
+          </a>
+        </marquee>
+      </div>
+      
+
+
+    
+       <div class="directions">
+            hover or click to explore!</div>
        
+    <div class="navigation">
+        <div class="navigation-container" >
+            <a class="home" href="homepage.html"> HOME </a>
+                 <!-- NOTES TAB -->
+            <div id="notes-tab">
+                NOTES
+                <div id="down-arrow"></div>
+            </div>
+        
+            <div id="notes-content" class="hidden">
+                
+               I'm still obsessed with Greta Van Fleet after that<br> music festival I went to! 
+               I also listened to Victoria Monet's <br>recent album and I really enjoyed it. 
+               
+               
+            </div>
+
+            <div class="navigation-item" id="left">
+                <a class="previous" href="entry2.html"> < </a>
+            </div>
+             <div class="navigation-item" id="date">
+                    <h1 class="date"> SEPTEMBER 24 - 30</h1>
+             </div>
+             <div class="navigation-item" id="right">
+                <a class="next" href="entry4.html"> > </a>
+             </div>
+
+        </div>
+        
+    </div>
+
+    <!-- GRID OF SPINNING RECORDS -->
+    <div class="page-container">
+        <div class="grid-container">
+            <div class="grid-item" id="item1">
+                <div class="circle spin-image">
+                    <img src="W3A.png" alt="Image 1">
+                    <span class="center-text">
+                        21.1% rap/hip hop; 20.4% rock; 15.1% pop; 15.1% indie; 11.2% r&b/soul; 
+                        8.5% jazz; 3.9% funk/disco; 2.6% house/electronic; 1.5% bossa nova
+                    
+                </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item2">
+                <div class="circle spin-image">
+                    <img src="W3B.png" alt="Image 2">
+                    <span class="center-text">
+                        Of 71
+                        artists, the top 3
+                        most-listened-to were
+                        Greta Van Fleet, Drake, and Bruno Mars. </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item3">
+                <div class="circle spin-image">
+                    <img src="W3C.png" alt="Image 3">
+                    <span class="center-text">
+                        Of 152 tracks, the 
+                        most-listened-to song was 
+                        Stardust Chords.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GRID FOR SMALL MEDIA QUERY -->
+     
+     <div class="page-container-2">
+        <div class="grid-container-2">
+            <div class="grid-item" id="item1">
+                <div class="circle spin-image">
+                    <img src="W3A.png" alt="Image 1">
+                    <span class="center-text">
+                        20.9% rap/hip hop; 16.5% funk/disco; 13.1% rock; 11.3%
+                         r&b/soul; 10.4% folk/
+                        acoustic; 10.4% pop; 9.6% 
+                        indie; 3.5% rock ballad; 
+                        2.6% jazz; 1.7% 
+                        house/electronic</span>
+                </div>
+            </div>
+            <div class="grid-item" id="item2">
+                <div class="circle spin-image">
+                    <img src="W3B.png" alt="Image 2">
+                    <span class="center-text">
+                        Of 53 
+                        artists, the top 3
+                        most-listened-to were
+                        Prince, Drake, 
+                        and Stevie Wonder. </span>
+                </div>
+            </div>
+            <div class="grid-item" id="item3">
+                <div class="circle spin-image">
+                    <img src="W3C.png" alt="Image 3">
+                    <span class="center-text">
+                        Of 115 tracks, the 
+                        most-listened-to song was 
+                        When You Were Mine.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AVATAR -->
     <div class="avatar">
-        <img src="me3.png" class="image1">
+        <img src="me3a.png" class="image1">
     </div>
 
-<div class="collage">
+   
+    
+    
+       
+        <script src="entry9.js"></script>
 
-
-</div>
-
-<div class="title">
-<marquee behavior="scroll" 
-direction="left" 
-scrollamount="14"
-onmouseover="this.stop();"
-onmouseout="this.start();" >
-SEPTEMBER 24   -   SEPTEMBER 30</marquee></div> <br><br>
-<div class="title2">
-    MUSIC ANALYSIS
-    <img src="headphones.png" class="pngheadphones">
-    <img src="musicfolder.png" class="pngfolder">
-    <img src="guitar.png" class="pngguitar">
-    <img src="ipod.png" class="pngipod"></div> <br>
- 
-
-<div class="genres">
-    <img src="bluevinyl.gif" class="vinyl1">
-    <div class="genretext">
-        <img src="genres3.png" class="genredetails">
-
-    </div>
-</div>
-<div class="artists">
-   <img src="pinkvinyl.gif" class="vinyl2">
-   <div class="artisttext">
-        <img src="artists3.png" class="artistdetails">
-   </div>
-</div>
-
-<div class="tracks">
-    <img src="yellowvinyl.gif" class="vinyl3">
-    <div class="tracktext">
-        <img src="tracks3.png" class="trackdetails">
-    </div>
-
-</div>
-
-<a class="previous" href="entry2copy.html">Previous</a>
-<a class="next" href="entry4.html">Next</a>
-
-
-
+        
+        <!-- <a class="previous" href="entry8.html"> < </a>
+        <a class="next" href="entry10.html"> > </a>
+        <a class="home" href="homepage.html"> home </a> -->
 
 
 </body>
+</html>

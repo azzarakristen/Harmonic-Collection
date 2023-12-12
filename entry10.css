@@ -15,7 +15,7 @@ html {
     letter-spacing: 3px;
 } */
 
-.genres, .songs, .artists, .favorites {
+.genres, .songs, .artists, .favorites, .averages {
     font-size: 3vw;
     font-family: "filson-soft", sans-serif;
     font-weight: 400;
@@ -27,7 +27,7 @@ html {
    
 }
 
-.genrestitle, .artiststitle, .songstitle, .favoritestitle {
+.genrestitle, .artiststitle, .songstitle, .favoritestitle, .averagestitle {
     font-family: "eight", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -48,23 +48,29 @@ html {
 
 .artists {
     text-align: right;
-    background-color: #f2a7e1;
-}
-
-.favorites {
     background-color: #a2d4a1;
 }
 
+.favorites {
+    background-color: #f2a7e1;
+}
+
+.averages {
+    text-align: right;
+    background-color: #f5d59a
+}
+
 .previous,  .home {
-    box-sizing: border-box;
-    background-color: white;
-    padding: 5px;
-    border-radius: 20px;
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 36px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     position: fixed;
-    font-size: 24px;
     font-family: "filson-soft", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -74,11 +80,13 @@ html {
 .previous {
     top: 7%;
     left: 4%;
+    border-bottom-left-radius: 10px;
 }
 
 .home {
     top: 7%;
-    left: 6%;
+    left: 9%;
+    border-bottom-right-radius: 10px;
 }
 
 @media screen and (max-width: 800px){

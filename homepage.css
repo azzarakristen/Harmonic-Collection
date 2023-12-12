@@ -1,79 +1,127 @@
 html{
-    background-color: #c9c9c9
-    /* #b5b5b5 */
-    /* #ffad63 */
-    /* #628760 */
-    
-    /* #fffab8; */
+    background-color: #7d9ec9
+
 }
-.containerbig {
-    display: grid;
-    position: fixed;
-    left: 40%;
-    top: 18%;
-    grid-template-columns: 55% 55% 55%;
-    grid-template-rows: 35% 35% 35%;
-}
+
 
 .containersmall{
     display: none
 }
 
-.week1, .week2, .week3, .week4, .week5, .week6, .week7, .week8, .week9 {
-    width: 190px;
-    height: auto;
-}
 
 .title {
-     font-family: "eight", sans-serif;
-     font-weight: 400;
-     font-style: normal;
-      font-size: 5vw;
-      letter-spacing: 3px;
-      position: fixed;
-      top: 1%;
-      text-align: center;
-      z-index: 2;
-      left: 4%;
-      -webkit-text-fill-color: white;
-      -webkit-text-stroke: 1.25px;
-      -webkit-text-stroke-color: #696969;
-
-}
-
-.containerlinksleft {
-    display: grid;
-    position: fixed;
-    grid-template-rows: 15% 15% 15% 15% 15% 15% 15% 15% 15% 15%;
-    grid-template-columns: 100%;
-    left: -2%;
-    top: 18%;
-    box-sizing: border-box;
-    border: 2px solid white;
-    border-radius: 30px;
-    padding-left: 200px;
-    padding-right: 15px;
-    padding-bottom: 190px;
-    padding-top: 20px;
-
-}
-
-.link1, .link2, .link3, .link4, .link5, .link6, .link7, .link8, .link9, .conclusion {
-    font-family: "ltc-francis", sans-serif;
+    font-family: "eight", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 4vw;
-    line-height: 2.5vw;
-    -webkit-text-fill-color: #696969;
+     font-size: 5vw;
+     letter-spacing: 3px;
+  
+     text-align: center;
+     z-index: 2;
+     left: 8%;
+     -webkit-text-fill-color: black;
+     position: fixed; /* Change from fixed to absolute */
+     top: 5%; /* Adjust as needed */
+     box-sizing: border-box;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+     
 
 }
+
+
+
+.body {
+    margin: 0;
+
+}
+
+.containerbig {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; /* Adjust the gap between items as needed */
+    width: 100%; 
+    margin: auto;
+
+    position: absolute;
+    top: 30%;
+}
+
+.link1, .link2, .link3, .link4, .link5, .link6, .link7, .link8, .link9 {
+    text-align: center;
+}
+
+.week1, .week2, .week3, .week4, .week5, .week6, .week7, .week8, .week9 {
+    width: 400px; /* Adjust the width as needed */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+    animation-play-state: paused;
+}
+
+.week1:hover, .week2:hover, .week3:hover, .week4:hover, .week5:hover, .week6:hover, .week7:hover, .week8:hover, .week9:hover {
+    animation: spin 10s linear infinite;
+}
+
+.week1.hovered {
+    transform: rotate(360deg);
+    transition: none; /* Remove transition effect */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
 
 a {
  color: black;
  text-decoration: none;
 }
 
-@media screen and (max-width: 800px){
+.end {
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "filson-soft", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+   right: 4%;
+   bottom: 7%;
+   
+   
+   
+   
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .containerbig {
+        width: 90%;
+    }
+    
+    .week1, .week2, .week3, .week4, .week5, .week6, .week7, .week8, .week9 {
+        width: 125px;
+        height: auto;
+    }
+
     .containerlinksleft {
         padding-top: 15px;
         padding-bottom: 190px;
