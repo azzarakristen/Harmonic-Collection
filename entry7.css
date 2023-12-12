@@ -389,7 +389,7 @@ html {
 
     .directions {
       right: 25%;
-      bottom: 80%;
+      bottom: 68%;
       font-size: 14px;
     }
     #notes-content {
@@ -397,14 +397,20 @@ html {
       top: 120px;
     }
     .circle {
-      height: 220px;
-      width: 220px;
+      height: 200px;
+      width: 200px;
     }
     .image1 {
       height: 200px;
+      left: 75%;
     }
     #notes-tab, .home {
       font-size: 15px;
+      top: 15%;
+    }
+    #notes-content {
+      top: 150px;
+      font-size: 10px;
     }
 
   }
