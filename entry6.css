@@ -37,8 +37,8 @@ body {
 }
 
 .marquee-link {
-  text-decoration: none; /* Remove the default underline */
-  color: black; /* Match the text color */
+  text-decoration: none;
+  color: black;
 }
 .marquee-link:hover {
   color:#6d8770
@@ -134,15 +134,15 @@ body {
 .grid-item {
   position: relative;
 }
-/* Define the spinning animation */
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
-/* container for spin */
+
 .circle {
-  width: 350px; /* Adjust the size as needed */
+  width: 350px; 
   height: 350px;
   border-radius: 50%;
   overflow: hidden;
@@ -165,9 +165,9 @@ body {
   color: white;
   font-size: 24px; 
   text-align: center;
-  opacity: 0; /* Initially hidden */
+  opacity: 0; 
   transition: opacity 0.5s ease;
-  padding: 300px; /* Padding for the border box */
+  padding: 300px; 
   background-color: #1b351b; 
   width: 75%;
 
@@ -183,7 +183,7 @@ body {
 
 
 
-/* Show text on hover */
+
 .grid-item:hover .spin-image .center-text {
   opacity: 1;
 }
@@ -386,7 +386,19 @@ body {
     font-size: 20px;
   }
   .directions {
-    right: 31%
+    right: 20%;
+    top: 17%
+  }
+  #notes-content {
+    top: 120px;
+  }
+  .image1 {
+    height: 190px;
+    right: 75%
+  }
+  .circle {
+    height: 220px;
+    width: 220px;
   }
 }
 @media screen and (max-width: 350px) {

@@ -1,3 +1,5 @@
+// assisted by chat gpt
+
 document.addEventListener("DOMContentLoaded", function () {
     var notesTab = document.getElementById("notes-tab");
     var notesContent = document.getElementById("notes-content");

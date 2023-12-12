@@ -1,9 +1,12 @@
+/* my code is very similar for most entries, so my only comments are in homepage.html, homepage.css,
+entry1.html, entry1.css, entry10.html, entry10.css, and entry9.js. */
+
 html{
     background-color: #7d9ec9
 
 }
 
-
+/* hiding container for small screen */
 .containersmall{
     display: none
 }
@@ -40,10 +43,11 @@ html{
 
 }
 
+/* displaying pngs as grid */
 .containerbig {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px; /* Adjust the gap between items as needed */
+    gap: 50px; 
     width: 100%; 
     margin: auto;
 
@@ -56,20 +60,21 @@ html{
 }
 
 .week1, .week2, .week3, .week4, .week5, .week6, .week7, .week8, .week9 {
-    width: 400px; /* Adjust the width as needed */
+    width: 400px; 
     max-width: 100%;
     height: auto;
     transition: transform 0.5s ease-in-out;
     animation-play-state: paused;
 }
 
+/* spinning animation on hover */
 .week1:hover, .week2:hover, .week3:hover, .week4:hover, .week5:hover, .week6:hover, .week7:hover, .week8:hover, .week9:hover {
     animation: spin 10s linear infinite;
 }
 
 .week1.hovered {
     transform: rotate(360deg);
-    transition: none; /* Remove transition effect */
+    transition: none; 
 }
 
 @keyframes spin {
@@ -110,6 +115,8 @@ a {
    
 }
 
+
+/* media queries */
 @media screen and (max-width: 800px) {
     .containerbig {
         gap: 10px;
